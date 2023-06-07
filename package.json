@@ -1,0 +1,40 @@
+{
+  "name": "teste",
+  "version": "0.0.1",
+  "description": "Cloudflare Workers React Site",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --ip 127.0.0.1 --port 3000",
+    "remote": "wrangler dev --remote --ip 127.0.0.1 --port 3000",
+    "deploy": "wrangler deploy",
+    "login": "wrangler login",
+    "tail": "wrangler tail",
+    "build": "react-scripts build",
+    "start": "react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "~0.1.x",
+    "react": "^18.2.x",
+    "react-dom": "^18.2.x"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.x.x",
+    "react-scripts": "5.0.1",
+    "wrangler": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
